@@ -1,0 +1,252 @@
+/*Start Variables*/
+:root {
+  --main-color: rgb(51 65 85 / 1);
+  --secondery-color: rgb(15 116 143 /70%);
+  --section-padding: 100px;
+}
+
+/*End Variables*/
+/*Start Global Rules*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Cairo';
+  overflow-x: hidden;
+}
+ul {
+  list-style: none;
+}
+
+/*End Global Rules*/
+/*Start Header*/
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+}
+header .logo {
+  padding: 10px;
+}
+header .logo a img {
+  width: 75px;
+}
+header .container {
+  max-width: 100%;
+}
+header .toggle-menu {
+  color: white;
+  font-size: 27px;
+}
+@media (min-width: 767px) {
+  header .toggle-menu {
+    display: none;
+  }
+  header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  header .container button {
+    display: none;
+  }
+  header .container .logo {
+    margin-right: 20px;
+  }
+  header .container .bars {
+    margin-left: 100px;
+    cursor: pointer;
+  }
+  .mobile-view button {
+    display: flex !important;
+    flex-direction: column;
+    position: relative;
+  }
+  header nav {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*Start Land*/
+/*Start Landing*/
+.land {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Aref Ruqaa', serif;
+  color: white;
+  background-image: linear-gradient(rgb(15 116 143 /70%), rgba(0, 0, 0, 0.3)),
+    url('./images/backk.gif');
+  background-size:cover;
+  background-position: center;
+}
+
+.land h3 {
+  font-size: 3.2rem;
+  font-style: italic;
+}
+.land p {
+  font-size: 2rem;
+  color: gold;
+}
+.land h1 {
+  font-size: 5rem;
+  margin-bottom: 25px;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+.land .box {
+  text-transform: uppercase;
+  padding: 25px 40px;
+  background: var(--main-color);
+  margin-bottom: -55px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: var(--main-duration);
+}
+.land .box:hover {
+  background: rgb(76, 91, 112);
+}
+
+@media (max-width: 992px) {
+  .land h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .land h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  .land .box {
+    padding: 20px 30px;
+    font-size: 1.1rem;
+  }
+}
+/*End Landing*/
+/*Start Gallery*/
+.gallery {
+border-bottom: 2px solid var(--secondery-color);
+  margin-top: 0rem;
+  padding-bottom: 7rem;
+  padding-top: 1rem;
+  background: #f8f9fa;
+}
+.gallery .main-heading {
+  margin-top: 45px;
+  text-align: center;
+}
+.gallery .main-heading h2 {
+  color: var(--main-color);
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.gallery .main-heading p {
+  color: var(--secondery-color);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+.gallery .container {
+  /*
+  display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+ gap: 40px;
+margin-left: 5%;
+margin-right: calc(5% - 40px);
+ */
+}
+.gallery .container .box {
+  padding-bottom: 50px;
+  background-color: white;
+  /*
+  box-shadow: 0px 12px 20px 0px rgb(0 0 0 / 13%), 0px 2px 4px 0px rgb(0 0 0 /12%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 90%;
+*/
+}
+.gallery .container .box .image {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .container .box .image img {
+  max-width: 100%;
+  transition: var(--main-duration);
+  cursor: pointer;
+  transition: var(--main-duration);
+  position: relative;
+}
+
+.gallery .container .box .text {
+  position: relative;
+  top: 25px;
+  text-align: center;
+}
+.gallery .container .box .text h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+.gallery .container .box .text p {
+  color: var(--secondery-color);
+}
+/*End Gallery*/
+/*Start Footer*/
+.footer{
+
+}
+.footer .container{
+  
+}
+@media(max-width:636px){
+  .footer .container{
+  flex-direction: column;
+  gap: 20px;
+  }
+  .footer .container .about{
+    width: auto;
+  }
+}
+
+/*End Footer*/

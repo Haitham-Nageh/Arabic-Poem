@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>محمد مصطفى حمام</title>
+  <!-- Render All Elements Normally -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="mycss.css" />
+  <!--Tailwand-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--drop list tailwnind-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="images/logo-removebg.png" />
+  <!--Animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <!--Start Header-->
+  <header>
+    <div class="container bg-slate-700">
+      <div class="logoandbar flex items-center justify-around">
+        <div class="bars"><i class="fas fa-bars toggle-menu"></i></div>
+        <div class="logo">
+          <a href="index.html"><img src="images/logo-removebg.png" alt="" /></a>
+        </div>
+      </div>
+      <nav id="nav">
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown"
+          class="text-white bg-slate-600 hover:bg-slate-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800"
+          type="button">
+          القصائد
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdown"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="index.html#poems" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">كل
+                القصائد</a>
+            </li>
+            <li>
+              <a href="haram.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">من وحي
+                الحرمين</a>
+            </li>
+            <li>
+              <a href="yafa.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">يافا</a>
+            </li>
+            <li>
+              <a href="sanod.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">سنعود</a>
+            </li>
+          </ul>
+        </div>
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown2"
+          class="text-white bg-slate-600 hover:bg-slate-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800"
+          type="button">
+          الشعراء<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdown2"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="#sh" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">كل
+                الشعراء</a>
+            </li>
+            <li>
+              <a href="mohammad.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">محمد مصطفى
+                حمام</a>
+            </li>
+            <li>
+              <a href="mahmoud.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> محمود سليم
+                الحوت</a>
+            </li>
+            <li>
+              <a href="abd.html"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">عبد الكريم بن
+                سعيد الكرمي (ابو سلمى)</a>
+            </li>
+          </ul>
+        </div>
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown1"
+          class="text-white bg-slate-600 hover:bg-slate-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800"
+          type="button">
+          الشروحات<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdown1"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="haram.html#harex"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">شرح القصيدة: من
+                وحي الحرمين</a>
+            </li>
+            <li>
+              <a href="yafa.html#yex"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">شرح القصيدة: يافا
+              </a>
+            </li>
+            <li>
+              <a href="sanod.html#sanex"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">شرح القصيدة:
+                سنعود</a>
+            </li>
+          </ul>
+        </div>
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown4"
+          class="text-white bg-slate-600 hover:bg-slate-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800"
+          type="button">
+          باوربوينت
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdown4"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="haram.html#haramslider"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">من وحي
+                الحرمين</a>
+            </li>
+            <li>
+              <a href="yafa.html#yafaslider"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">يافا</a>
+            </li>
+            <li>
+              <a href="sanod.html#sanaaoslider"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">سنعود</a>
+            </li>
+          </ul>
+        </div>
+
+
+        <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown3"
+          class="text-white bg-slate-600 hover:bg-slate-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800"
+          type="button">
+          الامتحانات<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <!-- Dropdown menu -->
+        <div id="dropdown3"
+          class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+          <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+            <li>
+              <a href="index.html#allquiz"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">الكويز الكلي</a>
+            </li>
+            <li>
+              <a href="haram.html#haramquiz"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">كويز قصيدة من وحي
+                الحرمين</a>
+            </li>
+            <li>
+              <a href="yafa.html#yafaquiz"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">كويز قصيدة
+                يافا</a>
+            </li>
+            <li>
+              <a href="sanod.html#sanaaodquiz"
+                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">كويز قصيدة
+                سنعود</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--End Header-->
+  <!--Start Text Land-->
+  <div class="info ">
+    <div class="text flex items-center content-center flex-col mt-28">
+      <h3
+        class="text-white bg-slate-600 hover:bg-slate-800 font-normal rounded-lg text-lg px-5 py-2.5 text-center inline-flex items-center dark:bg-slate-700 dark:hover:bg-slate-600 dark:focus:ring-slate-800">
+        الشاعر:محمد مصطفى حمام
+      </h3>
+      <ul class="mr-10 mt-5">
+        <li class="text-sky-900 text-lg">
+          <span class="font-bold">من هو الشاعر محمد مصطفى حمام:</span>
+          <p class="text-slate-700 leading-10">
+            من أبرز الشعراء الذائع صيتهم بخفة الظل والظرف كان محمد مصطفى حمام
+            (1904 ــ 1964). تعلم فى الكتّاب مبادئ القراءة والكتابة،<br> وحفظ
+            القرآن الكريم، ثم التحق بمدرسة فارسكور الابتدائية، وحصل منها على
+            الشهادة الابتدائية. انتقل شاعرنا إلى القاهرة، والتحق بالمدرسة
+            الخديوية الثانوية،<br> وتولى الإنفاق عليه فى هذه المرحلة السلطان حسين
+            كامل، ومن بعده السلطان فؤاد إلى أن اشترك فى ثورة 1919. <br>وبعد إتمامه
+            المرحلة الثانوية التحق بمدرسة المعلمين العليا وتخرج فيها. بدأ
+            حياته العملية مبكرًا بعد أن توقف المدد السلطانى والإنفاق عليه،
+            <br>
+            فعمل فى صحف مختلفة لينفق على نفسه، كما عمل موظفًا بإدارة التعاون
+            فى وزارة الزراعة، وفى وظائف أخرى بوزارتى الصناعة، والشئون
+            الاجتماعية، ثم استقال من العمل الحكومى (1952)
+            <br>
+            وتفرغ للعمل فى
+            الصحافة فى مصر، ثم فى السعودية منذ (1960)، ثم انتقل إلى الكويت
+            مراقبًا لغويًا بالتليفزيون. وكان عضو رابطة الأدب الحديث.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+   <!--Start Footer-->
+   <div class="footer bg-slate-700 p-10 mt-10">
+    <div class="container flex justify-between items-center">
+      <div class="about w-1/3">
+        <h4 class="text-sky-600 border-b-2 border-sky-500 mb-3 font-bold">
+          حول الموقع
+        </h4>
+        <p class="text-white">
+          موقع الكتروني مختص بشرح قصائد كتاب اللغة العربية المنهج الفلسطيني
+          بطريقة جميلة وبسيطة تساعد الطالب على الفهم والحفظ في آن واحد
+        </p>
+      </div>
+      <div class="links">
+        <h4 class="text-sky-600 mb-3 font-bold">تابعنا على مواقع التواصل</h4>
+        <ul class="flex justify-evenly items-center text-white text-2xl">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook hover:text-sky-600"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram hover:text-sky-600"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok hover:text-sky-600"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+        <h4 class="text-sky-600 mb-3 font-bold">بيت القصائد</h4>
+        <div class="logo">
+          <a href="index.html"><img class="w-20" src="images/logo-removebg.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Footer-->
+  <!--Start Rights-->
+  <div class="copyr text-center p-4 border-x-gray-400">
+    <p class="">
+      صنع بحب من قبل
+      <span class="border-2 border-sky-400 pr-2 pl-2 font-bold text-sky-700 hover:bg-sky-400"><a
+          href="https://api.whatsapp.com/send?phone=972599213799&text=%D9%87%D9%8A%D8%AB%D9%85%20%D8%B9%D9%84%D8%A7%D9%88%D9%86%D8%A9%20%D9%84%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9%20%D8%A7%D9%84%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A%D8%A9%F0%9F%A4%97%2C%20%D8%A7%D8%AA%D8%B1%D9%83%20%D8%B1%D8%B3%D8%A7%D9%84%D8%A9">Haitham</a></span>
+    </p>
+  </div>
+  <!--End Rights-->
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+
+</html>
