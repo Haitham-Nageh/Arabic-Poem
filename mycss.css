@@ -94,9 +94,9 @@ header .toggle-menu {
   font-family: 'Aref Ruqaa', serif;
   color: white;
   background-image: linear-gradient(rgb(15 116 143 /70%), rgba(0, 0, 0, 0.3)),
-    url('./images/backk.gif');
+    url('./images/arabic.jpg');
   background-size:cover;
-  background-position: center;
+  background-position: top;
 }
 
 .land h3 {

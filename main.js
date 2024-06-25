@@ -1,8 +1,8 @@
-var myvar = document.getElementsByClassName('toggle-menu')[0];
-const mynav = document.getElementById('nav');
+var myvar = document.getElementsByClassName("toggle-menu")[0];
+const mynav = document.getElementById("nav");
 myvar.onclick = function () {
-  console.log('suiii');
-  mynav.classList.toggle('mobile-view');
+  console.log("suiii");
+  mynav.classList.toggle("mobile-view");
 };
 /******************/
 /*Type writter effect*/
@@ -20,7 +20,8 @@ function typewriterEffect(elementId, text, speed = 150) {
   typeWriter();
 }
 //Usage
-typewriterEffect('hello', 'مرحبا بك في بيت القصائد', 80);
+typewriterEffect("hello", "مرحبا بك في بيت القصائد", 80);
+/*
 typewriterEffect(
   'hellop',
   'موقع الكتروني تعليمي يختص بشرح القصائد للصفوف المتقدمة؛ بحيث تصل الى ذهن الطالب بشكلٍ سلسل وأسلوب مميز وممتع.',
@@ -28,3 +29,4 @@ typewriterEffect(
 );
 typewriterEffect('hello2', 'إبدأ خطوتك الأولى في التعلم', 80);
 // window.scrollY>20
+*/
