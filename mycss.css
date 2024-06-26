@@ -135,7 +135,8 @@ header .toggle-menu {
   text-transform: uppercase;
   padding: 25px 40px;
   background: var(--main-color);
-  margin-bottom: -55px;
+  margin-bottom: 0px;
+    margin-top: 150px;
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
